@@ -6,19 +6,15 @@ var router = express.Router();
 const port = process.env.PORT || 3000
 var bodyParser = require('body-parser');
 var expressHbs = require('express-handlebars');
+require('dotenv').config();
 var mongoose = require('mongoose');
 var index = require('./routes/index');
 //var cartRouter = require('./routes/cart');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/shopping', { 
+mongoose.connect(process.env.MONGO_CONNECT_URI, { 
     useNewUrlParser: true, 
     useUnifiedTopology: true,
-}, () => {
-    console.log('Connected to DB');
-    app.listen({ port: port }, () => {
-        console.log(`Server running at http://localhost:${port}`);
-    });
 }).catch(err => console.log(err));
 // view engine setup
 app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
@@ -31,7 +27,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/img',express.static(path.join(__dirname, 'public/img')));
 app.use('/js',express.static(path.join(__dirname, 'public/javascripts')));
 app.use('/css',express.static(path.join(__dirname, 'public/stylesheets')));
-
   
 
  /*var cartSchema = mongoose.Schema;
@@ -50,5 +45,9 @@ app.get('/', function(req, res){
                 res.send('index');
             });
 });*/
+
+app.listen({ port: port }, () => {
+    console.log(`Server running at http://localhost:${port}`);
+});
 
 module.exports = app;
