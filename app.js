@@ -3,7 +3,7 @@ var path = require('path');
 var app = express();
 // @ts-ignore
 var router = express.Router();
-const PORT = 3000
+const port = process.env.PORT || 3000
 var bodyParser = require('body-parser');
 var expressHbs = require('express-handlebars');
 var mongoose = require('mongoose');
@@ -16,8 +16,8 @@ mongoose.connect('mongodb://localhost:27017/shopping', {
     useUnifiedTopology: true,
 }, () => {
     console.log('Connected to DB');
-    app.listen({ port: PORT }, () => {
-        console.log(`Server running at http://localhost:${PORT}`);
+    app.listen({ port: port }, () => {
+        console.log(`Server running at http://localhost:${port}`);
     });
 }).catch(err => console.log(err));
 // view engine setup
