@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 var Product = require('../models/product');
 //var Cart = require('../models/cart');
 /* GET home page. */
+//get the product menu page with 3 items in a row
 router.get('/', function(req, res, next) {
 //    var successMgs = req.flash('success')[0];
     Product.find(function(err, docs){
