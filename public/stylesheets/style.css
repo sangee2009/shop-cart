@@ -1,75 +1,18 @@
-/*
-.main {
-    margin-top: 10px;
+.thumbnail img {
+  max-height: 200px;
 }
 
-.thumbnail img{
-    width: 150px;
-    height: auto;
-    margin: auto;
+ p.description {
+  color: green;
 }
-
-.thumbnail description {
-    color: #7f7f7f;
-}
-
-.price {
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.price-cart {
-    margin-right: 20px;
-}
-
-.border {
-    border-color: 2px solid red;
-}
-
-.checkout {
-    margin-top: 20px;
-}
-
-.total {
-    margin-left: auto;
-}*/
 
 .price {
   font-weight: bold;
   font-size: 16px;
-}
-/*.total {
-  margin-left: auto;
-}
-.main {
-  margin-top: 10px;
-}
-p.description
-{
-  color:green;
-  font-weight:bold;
-  font-size:14px;
-}
-.price-cart {
-  margin-right: 20px;
-}
-
-img.img-responsive
-{
-  width:240px;
-  height:200px;
-}
-
-.caption
-{
-  font-size:16px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color:green;
 }
 
-.row
+#container
 {
-  border:1px;
-  border-color:black;
-  border-style:solid;
-}*/
+  background-color: green;
+}

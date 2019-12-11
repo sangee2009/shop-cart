@@ -8,4 +8,3 @@ var schema = new cartSchema({
 });
 
 module.exports = mongoose.model('Cart', schema);
-
