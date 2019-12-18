@@ -7,7 +7,7 @@ var products = [new Product({
     imagePath:'\img\idli.jpg',
     title:'Idli',
     description: 'A plate of 2 idlis , chutney and sambar',
-    price:10
+    price:29
 }),
 
 
@@ -15,7 +15,7 @@ new Product({
     imagePath:'\img\plain-dosa.jpg',
     title:'Plain Dosa',
     description: 'Plain Dosa!!!!!',
-    price:15
+    price:30
 }),
 
 new Product({
@@ -25,7 +25,7 @@ new Product({
     price:20
 }),
 new Product({
-    imagePath:'https://files2.hungryforever.com/wp-content/uploads/2015/04/Featured-image-masala-dosa-recipe.jpg',
+    imagePath:'\img\medu-vada.jpg',
     title:'Medu Vada',
     description: 'South Indian Donut with Urad Dal served with chutney and sambar',
     price:7
@@ -33,13 +33,13 @@ new Product({
 
 
 new Product({
-    imagePath:'http://cdn.edgecast.steamstatic.com/steam/apps/261570/header.jpg?t=1462923075',
+    imagePath:'\img\Chicken_curry.jpg',
     title:'Chicken Curry',
     description: 'Curry chicken is a dish  with coconut base',
     price:25
 }),
 new Product({
-    imagePath:'http://cdn.edgecast.steamstatic.com/steam/apps/261570/header.jpg?t=1462923075',
+    imagePath:'\img\chicken-tikka-masala.jpg',
     title:'Chicken Tikka Masala',
     description: 'Chicken tikka masala is a dish of chunks of roasted marinated chicken in a spiced curry sauce',
     price:30
