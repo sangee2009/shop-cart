@@ -77,7 +77,7 @@ router.use(function (req,res,next) {
    app.get('/home', function(req, res) {
     res.render('./home');
   });
-//render cart page
+//render shopping cart page
   app.get('/cart', function(req, res) {
     res.render('shop/cart');
   });
